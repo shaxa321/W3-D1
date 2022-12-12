@@ -217,7 +217,18 @@ console.log("stringa finale   : " ,ex8upperFirst(ex8input));
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
+console.log("EX 9");
+const ex9cutstring= function cutString(l1){
+    let result="";
+    for(i=0;(i<l1.length-1);i++){
+        result=result+l1[i];
+    }
+    return result;
+}
 
+let ex9inputstring="Vediamo se funziona";
+console.log("stringa originale: ",ex9inputstring);
+console.log("stringa finale   : ",(ex9cutstring(ex9inputstring)));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 10
