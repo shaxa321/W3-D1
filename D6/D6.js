@@ -157,31 +157,9 @@ const ex7input="Epicode";
 console.log("stringa iniziale = ",ex7input);
 ex7reverseString(ex7input);
 
-/* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 8
- Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
- La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
-*/
-/*console.log("EX 8"); // SERVE AIUTO
-const ex8upperFirst=function upperFirst(l1){
-    let firstletter=false;
-    let result=l1[0].toUpperCase();
-        for(i=0;i<l1.length;i++){
-            if(firstletter==true){
-            l1.charAt[i]=(l1[i].toUpperCase());
-            firstletter=false;
-            }
-            if(l1[i]==" "){
-            firstletter=true;
-            }
-        console.log("number i",i,"valore boleano",firstletter," il carattere è:",l1[i],);
 
-}
-console.log(l1);
-}*/
-
-console.log("EX 8"); // SERVE AIUTO
+console.log("EX 8"); 
 const ex8upperFirst=function(l1){
     let firstletter=true;
     let result="";
