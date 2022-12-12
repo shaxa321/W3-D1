@@ -11,7 +11,7 @@ REGOLE
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato..
 */
 console.log("EX1");
-const ex1area= function areacalculator(l1,l2){
+const ex1area= function(l1,l2){
     return (l1*l2);
 };
 let ex1a=9;
@@ -28,7 +28,7 @@ console.log("i numeri sono ", ex1a, " e " ,ex1b, "l'area è :",ex1sum);
 */
 
 console.log("EX2");
-const ex2crazySum= function crazySum(l1,l2){
+const ex2crazySum= function(l1,l2){
     if(l1===l2){
         return((l1+l2)*3);
     }else{
@@ -49,7 +49,7 @@ console.log("i numeri sono ",ex2a," e ",ex2b , " il risultato è: ",ex2result);
 
 
 console.log("EX3");
-const ex3crazyDiff= function crazyDiff(l1){
+const ex3crazyDiff= function(l1){
     if(l1<=19){
     return(19-l1);
     }else
@@ -68,7 +68,7 @@ console.log("il numero fornito è ",ex3a, "il risultato è:" ,ex3result);
 */
 
 console.log("EX4");
-const ex4boundary= function boundary(l1){
+const ex4boundary= function(l1){
     switch(true){
         case (l1===400):
             return true;
@@ -95,7 +95,7 @@ console.log("il numero fornito è ",ex4a, "il risultato è:" ,ex4result);
 console.log("EX 5");
 
 
-const ex5epify=function epify(l1){
+const ex5epify=function(l1){
 ex5firstcharacters=(l1.slice(0,7));
 console.log("i primi 7 caratteri sono : ",ex5firstcharacters);
 if(ex5firstcharacters=="EPICODE"){
@@ -109,7 +109,7 @@ return l1 ;
 
 }
 
-const ex5a="sEPICODE ciao";
+const ex5a="Ciao global ";
 console.log("Il risultato finale è ",ex5epify(ex5a));
 
 
@@ -121,7 +121,7 @@ console.log("Il risultato finale è ",ex5epify(ex5a));
 */
 
 console.log("EX 6");
-const ex6check3and7= function check3and7(l1){
+const ex6check3and7= function(l1){
     if(l1>=0){
     
     if(((l1%3)===0 )||((l1%7)==0)){
@@ -145,7 +145,7 @@ ex6check3and7(ex6input);
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 console.log("EX 7")
-const ex7reverseString= function reverseString(l1){
+const ex7reverseString= function(l1){
 let result="";
 for(i=(l1.length);i>=0;i=i-1){
     result=result+l1.charAt(i);
@@ -182,7 +182,7 @@ console.log(l1);
 }*/
 
 console.log("EX 8"); // SERVE AIUTO
-const ex8upperFirst=function upperFirst(l1){
+const ex8upperFirst=function(l1){
     let firstletter=true;
     let result="";
  
@@ -218,9 +218,9 @@ console.log("stringa finale   : " ,ex8upperFirst(ex8input));
  della stringa originale.
 */
 console.log("EX 9");
-const ex9cutstring= function cutString(l1){
+const ex9cutstring= function(l1){
     let result="";
-    for(i=0;(i<l1.length-1);i++){
+    for(i=1;(i<l1.length-1);i++){
         result=result+l1[i];
     }
     return result;
@@ -228,7 +228,7 @@ const ex9cutstring= function cutString(l1){
 
 let ex9inputstring="Vediamo se funziona";
 console.log("stringa originale: ",ex9inputstring);
-console.log("stringa finale   : ",(ex9cutstring(ex9inputstring)));
+console.log("stringa finale   :  ",(ex9cutstring(ex9inputstring)));
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
