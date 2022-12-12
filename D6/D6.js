@@ -229,10 +229,21 @@ const ex9cutstring= function cutString(l1){
 let ex9inputstring="Vediamo se funziona";
 console.log("stringa originale: ",ex9inputstring);
 console.log("stringa finale   : ",(ex9cutstring(ex9inputstring)));
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("EX 10");
+const ex10giveMeRandom= function(l1){
+const arrayOfNumbers=[];
+for(i=0;i<l1;i++){
+    arrayOfNumbers[i]=Math.floor(Math.random() * 11);
+}
+return arrayOfNumbers;
+}
+
+let ex10number=9;
+let ex10result=[];
+ex10result=(ex10giveMeRandom(ex10number));
+console.log(ex10result);
